@@ -2,6 +2,7 @@
 
 - [项目简介](#项目简介)
 - [数据集](#数据集)
+- [模型](#模型)
 - [显存限制](#显存限制)
 - [环境搭建](#环境搭建)
 
@@ -32,6 +33,10 @@ PhT-LM = 检索模块 + 大模型模块
 - test_en_2_zh.json：英译汉测试集（未筛选分词<10的待翻译文本），位于src/retrieval/data/目录下
 - test_zh_2_en.json：汉译英测试集（未筛选分词<10的待翻译文本），位于src/retrieval/data/目录下
 
+## 模型
+
+- 模型获取地址：链接：https://pan.baidu.com/s/1PA3ZmdOklUhCfL8VjTANUg  提取码：41yk
+
 ## 显存限制
 
 - 4G+
@@ -42,7 +47,7 @@ PhT-LM = 检索模块 + 大模型模块
 2. 进入src/retrieval/retrieval/retrieval/config.py文件配置es相关参数（ES_API，BASIC_AUTH）
 3. pip install -r requirements.txt 下载项目运行所需的包
 4. 执行src/retrieval/insert_data.py文件，构建检索模块知识库（文档库和向量库），并插入数据
-
+5. 下载模型，拷贝model/到根目录
    注：若插入时程序报错：es窗口最大查询数量为10000时，需要修改es查询的最大返回数目
 
    ```bibtex
@@ -53,6 +58,7 @@ PhT-LM = 检索模块 + 大模型模块
      "max_result_window":50000
    }
    ```
+5. 下载模型，将model/文件夹拷贝到PhT_LM根目录下
 
 - 如何使用（二选一）：
 
@@ -97,10 +103,10 @@ PhT-LM = 检索模块 + 大模型模块
 
   if __name__=='__main__':
       # text参数：待翻译文本
-  	# is_zh参数：待翻译文本是否为中文
-  	# topk参数：上下文示例个数
-  	# fusion_weight参数：当检索方式为 es检索+向量库检索时，两者的比重
-  	# is_es参数：是否仅es检索
-  	# 经实验发现topk=4, fusion_weight=0.5最佳
+  	  # is_zh参数：待翻译文本是否为中文
+  	  # topk参数：上下文示例个数
+  	  # fusion_weight参数：当检索方式为 es检索+向量库检索时，两者的比重
+  	  # is_es参数：是否仅es检索
+  	  # 经实验发现topk=4, fusion_weight=0.5最佳
       print(get_answer("精神分裂症有哪些临床表现？", True, 4, 0.5, False))
   ```
