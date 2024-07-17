@@ -9,8 +9,6 @@
 
 PhT-LM = 检索模块 和 大模型模块
 
-
-
 **检索模块：**
 
 功能：输入待翻译句子，经过该模块获取与待翻译句子匹配度最高的词、句，作为大模型的in_context的例子，提高模型翻译能力。
@@ -18,41 +16,29 @@ PhT-LM = 检索模块 和 大模型模块
 策略：
 
 - es检索：使用es检索中文/英文词、句子。
-
- - 向量检索：英文使用mxbai-embed-large-v1向量模型编码，中文使用stella_base_zh_v3_1792d向量模型编码。
-
- - 等比融合：将es检索和文档检索的结果进去融合，作为最终的结果交给大模型作为in-context。（当前采用等比融合策略）
+- 向量检索：英文使用mxbai-embed-large-v1向量模型编码，中文使用stella_base_zh_v3_1792d向量模型编码。
+- 等比融合：将es检索和文档检索的结果进去融合，作为最终的结果交给大模型作为in-context。（当前采用等比融合策略）
 
  **大模型模块：**
 
  训练了专注于医药领域英汉双语翻译模型，该模型由由构建的翻译数据集对Qwen-1_8B模型微调而来。
 
-
-
 ## 数据集
-
 
 - train_translation.xlsx：通过药监局、微信文章等来源构建的翻译数据集，共18384条中英文对，位于src/retrieval/data/目录下
 - train_set：训练集，共34768条数据，位于src/retrieval/data/目录下
 - test_en_2_zh.json：英译汉测试集（未筛选分词<10的待翻译文本），位于src/retrieval/data/目录下
 - test_zh_2_en.json：汉译英测试集（未筛选分词<10的待翻译文本），位于src/retrieval/data/目录下
 
-
-
 ## 显存限制
 
 - 4G+
 
-
-
 ## 环境搭建
 
-1. 下载安装ES（8.9.0）
-
+1. 下载安装ES（8.9.0），存储翻译示例相关数据
 2. 进入src/retrieval/retrieval/retrieval/config.py文件配置es相关参数（ES_API，BASIC_AUTH）
-
 3. pip install -r requirements.txt 下载项目运行所需的包
-
 4. 执行src/retrieval/insert_data.py文件，构建检索模块知识库（文档库和向量库），并插入数据
 
    注：若插入时程序报错：es窗口最大查询数量为10000时，需要修改es查询的最大返回数目
@@ -69,11 +55,12 @@ PhT-LM = 检索模块 和 大模型模块
 - 如何使用（二选一）：
 
   1. web_demo界面（直接使用）
-   ```bibtex
+
+  ```bibtex
   python src/web_demo.py --model_name_or_path model/qwen_lora_1
-   ```
+  ```
   2. 简单调用（代码调用）
-  
+
   ```bibtex
   # bash  开启模型API接口
   bash model_api.sh
@@ -82,19 +69,19 @@ PhT-LM = 检索模块 和 大模型模块
   # python
   import requests
   import json
-  
-  
+
+
   url_api = "http://IP:8000/chat"
   def request_model_api(body):
      response = requests.post(url_api, json=body)  # 使用GET请求示例
-  
+
      if response.status_code == 200:  # 判断响应状态码为200表示成功
          resp = json.loads(response.content)
          return resp['content'].strip("\n").strip(" ")
      else:
          print("Error occurred while calling the API.")
          return None
-      
+
   def get_answer(text, is_zh, topk, fusion_weight, is_es):
       request_body = {
           "model": "string",
@@ -105,7 +92,7 @@ PhT-LM = 检索模块 和 大模型模块
           "is_es": is_es
       }
       return request_model_api(request_body)
-  
+
   if __name__=='__main__':
       # text参数：待翻译文本
   	# is_zh参数：待翻译文本是否为中文
