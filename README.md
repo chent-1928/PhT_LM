@@ -26,13 +26,12 @@ PhT-LM = 检索模块 + 大模型模块
 
  训练了专注于医药领域英汉双语翻译模型，该模型由由构建的翻译数据集对Qwen-1_8B模型微调而来。
 
-
 **注意：**PhT-LM有输入长度限制。如果待翻译内容过长，请切分段落依次翻译
 
 ## 数据集
 
 - train_translation.xlsx：通过药监局、微信文章等来源构建的翻译数据集，共18384条中英文对，位于src/retrieval/data/目录下
-- train_set：训练集，共34768条数据，位于src/retrieval/data/目录下
+- train_set：训练集，共34769条数据，位于src/retrieval/data/目录下
 - test_en_2_zh.json：英译汉测试集（未筛选分词<10的待翻译文本），位于src/retrieval/data/目录下
 - test_zh_2_en.json：汉译英测试集（未筛选分词<10的待翻译文本），位于src/retrieval/data/目录下
 
