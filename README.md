@@ -61,13 +61,15 @@ PhT-LM = 检索模块 + 大模型模块
 
 - 如何使用（二选一）：
 
-  1. web_demo界面（直接使用）
+  ​    **注意：**PhT-LM有输入长度限制。如果待翻译内容过长，请切分段落依次翻译
 
+  1. web_demo界面（直接使用）
+  
   ```bibtex
   python src/web_demo.py --model_name_or_path model/translation_model
   ```
   2. 简单调用（代码调用）
-
+  
   ```bibtex
   # bash  开启模型API接口
   bash model_api.sh
