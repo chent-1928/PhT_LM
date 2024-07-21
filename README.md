@@ -83,7 +83,7 @@ PhT-LM = 检索模块 + 大模型模块
 
   url_api = "http://IP:8000/chat"
   def request_model_api(body):
-     response = requests.post(url_api, json=body)  # 使用GET请求示例
+     response = requests.post(url_api, json=body)  # 使用POST请求
 
      if response.status_code == 200:  # 判断响应状态码为200表示成功
          resp = json.loads(response.content)
