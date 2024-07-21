@@ -43,7 +43,7 @@ PhT-LM = 检索模块 + 大模型模块
 
 ## 环境搭建
 
-1. 下载安装ES（8.9.0），存储翻译示例相关数据
+1. 下载安装ES（8.9.0），作为数据库
 2. 进入src/retrieval/retrieval/retrieval/config.py文件配置es相关参数（ES_API，BASIC_AUTH）
 3. pip install -r requirements.txt 下载项目运行所需的包
 4. 执行src/retrieval/insert_data.py文件，构建检索模块知识库（文档库和向量库），并插入数据
@@ -61,15 +61,15 @@ PhT-LM = 检索模块 + 大模型模块
 
 - 如何使用（二选一）：
 
-  ​    **注意：**PhT-LM有输入长度限制。如果待翻译内容过长，请切分段落依次翻译
+  **注意：**PhT-LM有输入长度限制。如果待翻译内容过长，请切分段落依次翻译
 
   1. web_demo界面（直接使用）
-  
+
   ```bibtex
   python src/web_demo.py --model_name_or_path model/translation_model
   ```
   2. 简单调用（代码调用）
-  
+
   ```bibtex
   # bash  开启模型API接口
   bash model_api.sh
