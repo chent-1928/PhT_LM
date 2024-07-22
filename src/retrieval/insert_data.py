@@ -1,3 +1,5 @@
+import os
+
 from retrieval.retrieval.kb import DocKB, ESVectorKB
 from retrieval.retrieval.config import KB_NAME, VEC_NAME
 from retrieval.retrieval.utils import excel_parser
@@ -18,7 +20,9 @@ def clear_kb():
     question_veckb.clear_kb()
 
 def insert_translation_data():
-    datas = excel_parser('./data/translation_data.xlsx')
+    current_dir = os.getcwd() 
+    xlsx_path = current_dir + "/src/retrieval/data/translation_data.xlsx"
+    datas = excel_parser(xlsx_path)
     for data in datas:
         id = question_kb.insert_one({'zh_text': data['Chinese'], 'en_text': data['English']})
 
