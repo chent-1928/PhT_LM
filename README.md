@@ -49,9 +49,10 @@ PhT-LM = 检索模块 + 大模型模块
 2. 进入src/retrieval/retrieval/retrieval/config.py文件配置es相关参数（ES_API，BASIC_AUTH）
 3. pip install -r requirements.txt 下载项目运行所需的包
 4. 下载模型，将model/文件夹拷贝到PhT_LM根目录下
-5. 执行src/retrieval/insert_data.py文件，构建检索模块知识库（文档库和向量库），并插入数据（若插入时程序报错：es窗口最大查询数量为10000时，需要修改es查询的最大返回数目）。
+5. 执行src/retrieval/insert_data.py文件，构建检索模块知识库（文档库和向量库），并插入数据（若插入时程序报错：es窗口最大查询数量为10000，则需要发送请求修改es查询的最大返回数目）。
 
    ```bibtex
+   # kb_name为src/retrieval/retrieval/retrieval/config.py文件中KB_NAME的参数值
    请求地址：http://IP:port/kb_name/_settings
    请求方式：PUT
    请求体：

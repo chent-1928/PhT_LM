@@ -1,8 +1,8 @@
 import torch
 
 # ======================== es cinfig =======================
-ES_API = "http://10.4.0.141:9200"
-BASIC_AUTH = ("elastic", "vickyotis")
+ES_API = "http://IP:9200"
+BASIC_AUTH = ("username", "password")
 
 # ======================== create knowledge base cinfig =======================
 
