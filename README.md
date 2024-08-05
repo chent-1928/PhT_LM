@@ -30,10 +30,25 @@ PhT-LM = 检索模块 + 大模型模块
 
 ## 数据集
 
-- train_translation.xlsx：通过药监局、微信文章等来源构建的翻译数据集，共18384条中英文对，位于src/retrieval/data/目录下
-- train_set：训练集，共34769条数据，位于src/retrieval/data/目录下
-- test_en_2_zh.json：英译汉测试集（未筛选分词<10的待翻译文本），位于src/retrieval/data/目录下
-- test_zh_2_en.json：汉译英测试集（未筛选分词<10的待翻译文本），位于src/retrieval/data/目录下
+- train_translation.xlsx：通过药监局、微信文章等来源构建的翻译数据，共18384条中英文对，位于src/retrieval/data/目录下
+- train_set：训练集，共34769条数据，位于data/train_set.json目录下
+- test_en_2_zh_1.json：英译汉测试集(1个上下文样例)，位于data/目录下
+- test_en_2_zh_2.json：英译汉测试集(2个上下文样例)，位于data/目录下
+- test_en_2_zh.json：英译汉测试集(4个上下文样例)，位于data/目录下
+- test_en_2_zh_8.json：英译汉测试集(8个上下文样例)，位于data/目录下
+- test_en_2_zh_16.json：英译汉测试集(16个上下文样例)，位于data/目录下
+- test_en_2_zh_es.json：英译汉测试集(4个上下文样例，基于es检索策略)，位于data/目录下
+- test_en_2_zh_vec.json：英译汉测试集(4个上下文样例， 基于vec检索策略)，位于data/目录下
+- test_en_2_zh_without_context.json：英译汉测试集(无上下文样例)，位于data/目录下
+- test_zh_2_en_1.json：汉译英测试集(1个上下文样例)，位于data/目录下
+- test_zh_2_en_2.json：汉译英测试集(2个上下文样例)，位于data/目录下
+- test_zh_2_en.json：汉译英测试集(4个上下文样例)，位于data/目录下
+- test_zh_2_en_8.json：汉译英测试集(8个上下文样例)，位于data/目录下
+- test_zh_2_en_16.json：汉译英测试集(16个上下文样例)，位于data/目录下
+- test_zh_2_en_es.json：汉译英测试集(4个上下文样例，基于es检索策略)，位于data/目录下
+- test_zh_2_en_vec.json：汉译英测试集(4个上下文样例，基于vec检索策略)，位于data/目录下
+- test_zh_2_en_without_context.json：汉译英测试集(无上下文样例)，位于data/目录下
+
 
 ## 模型
 
