@@ -30,7 +30,7 @@ PhT-LM = 检索模块 + 大模型模块
 
 ## 数据集
 
-- train_translation.xlsx：通过药监局、微信文章等来源构建的翻译数据，共18384条中英文对，位于src/retrieval/data/目录下
+- train_translation.xlsx：通过药监局、微信文章等来源构建的翻译数据，位于src/retrieval/data/目录下
 - train_set：训练集，共34769条数据，位于data/train_set.json目录下
 - test_en_2_zh_1.json：英译汉测试集(1个上下文样例)，位于data/目录下
 - test_en_2_zh_2.json：英译汉测试集(2个上下文样例)，位于data/目录下
