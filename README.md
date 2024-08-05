@@ -75,6 +75,7 @@ PhT-LM = 检索模块 + 大模型模块
      "max_result_window":50000
    }
    ```
+   发送请求后，进入src/retrieval/insert_data.py文件，将Line 34行的create_kb()代码注释掉，重新运行该文件即可。
 
 - 如何使用（二选一）：
 
