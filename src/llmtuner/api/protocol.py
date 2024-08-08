@@ -37,6 +37,18 @@ class ChatCompletionRequest(BaseModel):
     top_p: Optional[float] = TOP_P
 
 
+class ChatCompletionTestRequest(BaseModel):
+    model: str
+    messages: List[ChatMessage]
+    tools: Optional[list] = []
+    do_sample: bool = True
+    temperature: Optional[float] = None
+    top_p: Optional[float] = None
+    n: int = 1
+    max_tokens: Optional[int] = None
+    stream: bool = False
+
+
 class ChatCompletionResponseChoice(BaseModel):
     index: int
     message: str=None

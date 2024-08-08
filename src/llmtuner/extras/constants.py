@@ -2,7 +2,7 @@
 MAX_TOKENS = 2048
 
 # 模型温度
-TEMPERATURE = 0
+TEMPERATURE = 0.1
 
 # 模型采样策略
 TOP_P = 0.7

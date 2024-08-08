@@ -13,6 +13,7 @@ from ..extras.logging import get_logger
 from ..extras.packages import is_fastapi_availble, is_starlette_available, is_uvicorn_available
 from .protocol import (
     ChatCompletionRequest,
+    ChatCompletionTestRequest,
     ChatCompletionResponse,
     ChatCompletionResponseChoice,
     ChatCompletionStreamResponse,
@@ -74,7 +75,7 @@ def create_app(chat_model: "ChatModel") -> "FastAPI":
     async def create_chat_completion(request: ChatCompletionRequest):
         logger.info("model api start...")
         messages = []
-        prompt = await format_prompt(request.query, request.is_zh, request.topk, request.fusion_weight, request.is_es)   
+        prompt = await format_prompt(request.query, request.is_zh, request.topk, request.fusion_weight, request.is_es)
         messages.append({
             "role": Role.USER,
             "content": prompt
@@ -95,7 +96,39 @@ def create_app(chat_model: "ChatModel") -> "FastAPI":
         })
         async with semaphore:
             return chat_stream(messages, request)
+        
+    @app.post("/chat/test", response_model=ChatCompletionResponse, status_code=status.HTTP_200_OK)
+    async def create_chat_completion_test(request: ChatCompletionTestRequest):
+        logger.info("model api start...")
+        # messages = []
+        # prompt = await format_prompt(request.query, request.is_zh, request.topk, request.fusion_weight, request.is_es)
+        # print(request)
+        messages = [dictify(message) for message in request.messages]
+        # print(messages)
+        # messages.append({
+        #     "role": Role.USER,
+        #     "content": request.messages[-1]['content']
+        # })
+        return await chat_completion_test(messages, request)
 
+    async def chat_completion_test(messages: Sequence[Dict[str, str]], request: ChatCompletionTestRequest):
+        responses = chat_model.chat(
+            messages,
+            temperature=request.temperature,
+            top_p=request.top_p,
+            max_new_tokens=request.max_tokens
+        )
+
+        choices = []
+        for i, response in enumerate(responses):
+            result = response.response_text
+            choices.append(
+                ChatCompletionResponseChoice(index=0, message=result, finish_reason=Finish.STOP)
+            )
+        
+        logger.info("model api finish...")
+        torch_gc()
+        return ChatCompletionResponse(success=True, content=choices[0].message)
     
     async def chat_completion(messages: Sequence[Dict[str, str]], request: ChatCompletionRequest):
         responses = chat_model.chat(

@@ -235,3 +235,26 @@ register_template(
     stop_words=["<|im_end|>"],
     replace_eos=True,
 )
+
+register_template(
+    name="chatglm3",
+    format_user=StringFormatter(slots=[{"token": "<|user|>"}, "\n", "{{content}}", {"token": "<|assistant|>"}]),
+    format_assistant=StringFormatter(slots=["\n", "{{content}}"]),
+    format_system=StringFormatter(slots=[{"token": "[gMASK]"}, {"token": "sop"}, "{{content}}"]),
+    format_function=FunctionFormatter(slots=["{{name}}\n{{arguments}}"]),
+    format_observation=StringFormatter(
+        slots=[{"token": "<|observation|>"}, "\n", "{{content}}", {"token": "<|assistant|>"}]
+    ),
+    default_system="你是一个药学领域的语言专家",
+    stop_words=["<|user|>", "<|observation|>"],
+    efficient_eos=True,
+    force_system=True,
+)
+
+register_template(
+    name="llama2_zh",
+    format_user=StringFormatter(slots=[{"bos_token"}, "[INST] {{content}} [/INST]"]),
+    format_system=StringFormatter(slots=["<<SYS>>\n{{content}}\n<</SYS>>\n\n"]),
+    # default_system="You are a helpful assistant. 你是一个乐于助人的助手。",
+    default_system="你是一个药学领域的语言专家",
+)
