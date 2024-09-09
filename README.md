@@ -126,6 +126,6 @@ PhT-LM = 检索模块 + 大模型模块
       # topk参数：上下文示例个数
       # fusion_weight参数：当检索方式为 es检索+向量库检索时，两者的比重
       # is_es参数：是否仅es检索
-      # 经实验发现topk=4, fusion_weight=0.5最佳
+      # 经实验发现topk=4最佳
       print(get_answer("精神分裂症有哪些临床表现？", True, 4, 0.5, False))
   ```
