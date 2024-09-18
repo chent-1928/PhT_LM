@@ -61,9 +61,9 @@ PhT-LM = 检索模块 + 大模型模块
 ## 环境搭建
 
 1. 下载安装ES（8.9.0），作为数据库
-2. 进入src/retrieval/retrieval/retrieval/config.py文件配置es相关参数（ES_API，BASIC_AUTH）
+2. 进入src/retrieval/retrieval/retrieval/config.py文件配置刚刚安装的ES相关设置（ES_API，BASIC_AUTH）
 3. pip install -r requirements.txt 下载项目运行所需的包
-4. 下载模型，将model/文件夹拷贝到PhT_LM根目录下
+4. 下载网盘提供的模型，将model/文件夹拷贝到PhT_LM根目录下
 5. 执行src/retrieval/insert_data.py文件，构建检索模块知识库（文档库和向量库），并插入数据（若插入时程序报错：es窗口最大查询数量为10000，则需要发送请求修改es查询的最大返回数目）。
 
    ```bibtex
