@@ -16,39 +16,11 @@ PhT-LM = 检索模块 + 大模型模块
 
 功能：输入待翻译句子，经过该模块获取与待翻译句子匹配度最高的词、句，作为大模型的in_context的例子，提高模型翻译能力。
 
-策略：
-
-- es检索：使用es检索中文/英文词、句子。
-- 向量检索：英文使用mxbai-embed-large-v1向量模型编码，中文使用stella_base_zh_v3_1792d向量模型编码。
-- 等比融合：将es检索和文档检索的结果进去融合，作为最终的结果交给大模型作为in-context。（当前采用等比融合策略）
-
  **大模型模块：**
 
  训练了专注于医药领域英汉双语翻译模型，该模型由由构建的翻译数据集对Qwen-1_8B模型微调而来。
 
 **注意：**PhT-LM有输入长度限制。如果待翻译内容过长，请切分段落依次翻译
-
-## 数据集
-
-- train_translation.xlsx：通过药监局、微信文章等来源构建的翻译数据，位于src/retrieval/data/目录下
-- train_set.json：训练集，新增2000条数据，目前共34769条数据，位于data/目录下
-- test_en_2_zh_1.json：英译汉测试集(1个上下文样例)，位于data/目录下
-- test_en_2_zh_2.json：英译汉测试集(2个上下文样例)，位于data/目录下
-- test_en_2_zh.json：英译汉测试集(4个上下文样例)，位于data/目录下
-- test_en_2_zh_8.json：英译汉测试集(8个上下文样例)，位于data/目录下
-- test_en_2_zh_16.json：英译汉测试集(16个上下文样例)，位于data/目录下
-- test_en_2_zh_es.json：英译汉测试集(4个上下文样例，基于es检索策略)，位于data/目录下
-- test_en_2_zh_vec.json：英译汉测试集(4个上下文样例， 基于vec检索策略)，位于data/目录下
-- test_en_2_zh_without_context.json：英译汉测试集(无上下文样例)，位于data/目录下
-- test_zh_2_en_1.json：汉译英测试集(1个上下文样例)，位于data/目录下
-- test_zh_2_en_2.json：汉译英测试集(2个上下文样例)，位于data/目录下
-- test_zh_2_en.json：汉译英测试集(4个上下文样例)，位于data/目录下
-- test_zh_2_en_8.json：汉译英测试集(8个上下文样例)，位于data/目录下
-- test_zh_2_en_16.json：汉译英测试集(16个上下文样例)，位于data/目录下
-- test_zh_2_en_es.json：汉译英测试集(4个上下文样例，基于es检索策略)，位于data/目录下
-- test_zh_2_en_vec.json：汉译英测试集(4个上下文样例，基于vec检索策略)，位于data/目录下
-- test_zh_2_en_without_context.json：汉译英测试集(无上下文样例)，位于data/目录下
-
 
 ## 模型
 
@@ -75,6 +47,7 @@ PhT-LM = 检索模块 + 大模型模块
      "max_result_window":50000
    }
    ```
+
    发送请求后，进入src/retrieval/insert_data.py文件，将Line 34行的create_kb()代码注释掉，重新运行该文件即可。
 
 - 如何使用（二选一）：
