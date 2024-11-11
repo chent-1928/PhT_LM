@@ -140,7 +140,7 @@ class DocKB(KB):
         res = es.get(index=self.kb_name, id=id)
         return res
 
-    def query_all(self,res_from=0,res_size=20000):
+    def query_all(self,res_from=0,res_size=100000):
         es = self.client
         res = es.search(index=self.kb_name,body={"from":res_from,"size":res_size,"query": {"match_all": {}}})
         hits = result_transfer(res)

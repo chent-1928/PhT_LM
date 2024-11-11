@@ -49,7 +49,7 @@ PhT-LM = 检索模块 + 大模型模块
    请求方式：PUT
    请求体：
    {
-     "max_result_window":50000
+     "max_result_window":150000
    }
    ```
 
