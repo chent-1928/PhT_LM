@@ -1,7 +1,6 @@
 from nltk.translate.bleu_score import sentence_bleu
 import jieba
 import json
-import pandas as pd
 import requests
 from nltk.translate.bleu_score import SmoothingFunction
 from nltk.translate.chrf_score import sentence_chrf
@@ -9,7 +8,7 @@ from nltk.translate.chrf_score import sentence_chrf
 smooth = SmoothingFunction()
 
 
-url_api = "http://10.4.0.141:8000/chat"
+url_api = "http://IP:8000/chat"
 files = [
     "data/ICH_file_en_2_zh.json", "data/ICH_file_zh_2_en.json",
     ]

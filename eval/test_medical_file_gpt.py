@@ -2,8 +2,6 @@
 import jieba
 import openai
 import json
-import time
-import pandas as pd
 from nltk.translate.bleu_score import SmoothingFunction
 from nltk.translate.bleu_score import sentence_bleu
 from nltk.translate.chrf_score import sentence_chrf
@@ -11,7 +9,7 @@ from nltk.translate.chrf_score import sentence_chrf
 # sk-mgJ1aFGM84tjWEXv4OXZDNfbb1blofZ5qaoxX7z5ipgXLIIF
 smooth = SmoothingFunction()
 openai.api_base = "https://api.chatanywhere.tech"
-openai.api_key = "sk-TkMY0C7ptbwu8Q1QvPD9qD2bGt8nsIqRvB3AymIYf2YH0L5G"
+openai.api_key = "sk-xxx"
 
 def send_request(system_prompt, prompt, is_zh):
         text = f"请将'{prompt}'翻译为英文，只能输出翻译后的句子，不允许添加编造成分。" if is_zh else f"请将'{prompt}'翻译为中文，只能输出翻译后的句子，不允许添加编造成分。"

@@ -3,7 +3,7 @@ import csv
 
 def translation(strs, language):
 
-    auth_key = "469f3ab8-eec8-49ee-8292-1661dccd0fed:fx"  # use DeepL free API 
+    auth_key = "xxx"  # use DeepL API 
     target_language = language      #"EN-US"
     #调用deepl
     translator = deepl.Translator(auth_key)  #input the auth_key

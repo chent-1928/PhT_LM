@@ -7,7 +7,6 @@ import requests
 from nltk.translate.bleu_score import sentence_bleu
 import jieba
 import json
-import pandas as pd
 import requests
 from nltk.translate.bleu_score import SmoothingFunction
 from nltk.translate.chrf_score import sentence_chrf

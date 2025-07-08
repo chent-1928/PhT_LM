@@ -1,10 +1,7 @@
 # encoding: utf-8
 import jieba
-import openai
 import requests
 import json
-import time
-import pandas as pd
 from nltk.translate.bleu_score import SmoothingFunction
 from nltk.translate.bleu_score import sentence_bleu
 from nltk.translate.chrf_score import sentence_chrf
@@ -12,7 +9,7 @@ from nltk.translate.chrf_score import sentence_chrf
 
 
 smooth = SmoothingFunction()
-url = "http://10.4.0.141:8000/chat/test"
+url = "http://IP:8000/chat/test"
 def send_request(prompt, is_zh):
         text = f"请将'{prompt}'翻译为英文，只能输出翻译后的句子，不允许添加编造成分。" if is_zh else f"请将'{prompt}'翻译为中文，只能输出翻译后的句子，不允许添加编造成分。"
         body = {
