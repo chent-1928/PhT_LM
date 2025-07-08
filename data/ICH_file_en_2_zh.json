@@ -1,0 +1,172 @@
+[
+    {
+        "instruction":"guideline on the need for carcinogenicity studies of pharmaceuticals ",
+        "output":"药物致癌性试验必要性指导原则",
+        "predict":"药物致癌性试验必要性指导原则"
+    },
+    {
+        "instruction":"1. introduction ",
+        "output":"1.前言 ",
+        "predict":"1.引言"
+    },
+    {
+        "instruction":"the objectives of carcinogenicity studies are to identify a tumorigenic potential in animals and to assess the relevant risk in humans. any cause for concern derived from laboratory investigations, animal toxicology studies, and data in humans may lead to a need for carcinogenicity studies. the practice of requiring carcinogenicity studies in rodents was instituted for pharmaceuticals that were expected to be administered regularly over a substantial part of a patient's lifetime. the design and interpretation of the results from these studies preceded much of the available current technology to test for genotoxic potential and the more recent advances in technologies to assess systemic exposure. these studies also preceded our current understanding of tumorigenesis with non-genotoxic agents. results from genotoxicity studies, toxicokinetics, and mechanistic studies can now be routinely applied in preclinical safety assessment. these additional data are important not only in considering whether to perform carcinogenicity studies but for interpreting study outcomes with respect to relevance for human safety. since carcinogenicity studies are time consuming and resource intensive they should only be performed when human exposure warrants the need for information from life-time studies in animals in order to assess carcinogenic potential. ",
+        "output":"致癌性试验的目的是在动物中识别潜在致癌作用，从而评价 人体中的相关风险。实验室研究、动物毒理学试验和人体数据中出现的任何担忧因素，均可能导致需要进行致癌性试验。对于预期在患者一生中大部分时间连续使用的药物，通常会要求采用啮齿类动物进行致癌性试验。这些试验的设计和结果解释出现在目前已有的测试潜在遗传毒性的大多数技术和评估系统暴露量的最新技术之前。这些研究也出现在我们目前对非遗传毒性物质致癌性的认识之前。现在遗传毒性试验、毒代动力学和机制研究的结果已被常规用于临床前安全性评价。这些新增数据不仅有助于判断是否需要进行致癌性试验，而且对解释研究结果与人体安全性的相关性也是十分重要的。由于致癌性试验耗时耗力，只有当人体暴露情况确实需要动物终生给药研究信息来评价其潜在致癌性时，才进行致癌性试验。 ",
+        "predict":"致癌性试验的目的是识别动物中致癌性潜力，评估人类中相关风险。实验室研究、动物毒理学研究和人类研究中得到的任何可疑结果都可能导致致癌性试验。对啮齿动物进行致癌性试验的实践始于预期定期给药的药物的长期使用。这些研究的设计和解释在许多现有的测试中都落后于对遗传毒性潜力和系统暴露的评估。这些研究也预示了非遗传毒性药物的非遗传性潜力。遗传毒性试验、毒理学和机制学研究的结果现在可以用于临床安全性评估。这些额外的数据不仅在考虑是否进行致癌性试验时重要，而且在考虑与人类安全有关的研究结果时也是如此。由于致癌性试验需要耗费大量时间和资源，因此只有当人类暴露需要从动物中获取信息时，才应进行致癌性试验。致癌性试验应仅在人类暴露需要从动物中获取信息时才进行，以评估致癌性潜力。"
+    },
+    {
+        "instruction":"2. historical background ",
+        "output":"2.历史背景 ",
+        "predict":"二、历史背景"
+    },
+    {
+        "instruction":"in japan, according to the 1990 “guidelines for toxicity studies of drugs manual”, carcinogenicity studies were needed if the clinical use was expected to be continuously for 6 months or longer. if there was cause for concern, pharmaceuticals generally used continuously for less than 6 months may have needed carcinogenicity studies. in the united states, most pharmaceuticals were tested in animals for their carcinogenic potential before widespread use in humans. according to the us food and drug administration, pharmaceuticals generally used for 3 months or more required carcinogenicity studies. in europe, the rules governing medicinal products in the european community defined the circumstances when carcinogenicity studies were required. these circumstances included administration over a substantial period of life, i.e., continuously during a minimum period of 6 months or frequently in an intermittent manner so that the total exposure was similar. ",
+        "output":"在日本，根据1990年药物毒性研究指导原则手册，如果临床预期连续用药6个月或更长时间，则需要进行致癌性试验。但如果存在其他担忧因素，连续用药少于6个月时也可能需要进行致癌性试验。在美国，大多数药物在广泛应用于人体之前，已在动物中检测了其潜在致癌性。根据美国fda要求，使用3个月或更长时间的药物通常需要进行致癌性试验。在欧洲，欧共体药品管理条例规定了要求进行致癌性试验的情况，包括患者长期使用的药物，即至少6个月的连续用药，或频繁地间歇性用药以致总的暴露时间与连续用药类似的药物。 ",
+        "predict":"在日本，根据1990年《药物毒性试验指导原则》的规定，如果临床试验预期持续6个月或更长，就需要进行致癌性试验。如果存在可疑情况，一般情况下，持续时间少于6个月的药物可能需要进行致癌性试验。在美国，大多数药物在广泛使用前在动物中进行致癌性试验。根据美国食品药品监督管理局，一般情况下，用于3个月或更长时间的药物需要进行致癌性试验。在欧洲，欧盟规定，需要进行致癌性试验的情况包括：持续使用超过一定期限，即至少6个月或间歇性使用，以使总暴露相似。"
+    },
+    {
+        "instruction":"3. objective of the guideline ",
+        "output":"3.目的 ",
+        "predict":"指南目的"
+    },
+    {
+        "instruction":"the objective of this guideline is to define the conditions under which carcinogenicity studies, should be conducted to avoid the unnecessary use of animals in testing, and to provide consistency in worldwide regulatory assessments of applications. it is expected that these studies will be performed in a manner that reflects currently accepted scientific standards. ",
+        "output":"本指导原则的目的在于明确需要进行致癌性试验的情形，以 避免试验中不必要的动物使用，并在全球注册评价监管机构中达成共识，期望这些试验开展时能反映当前公认的科学标准。",
+        "predict":"本指导原则的目的是确定致癌性试验应进行的条件，以避免不必要的动物试验，以及为全球监管评估申请提供一致性的标准。预期这些研究将以目前公认的科学标准的方式进行。"
+    },
+    {
+        "instruction":"the fundamental considerations in assessing the need for carcinogenicity studies are the maximum duration of patient treatment and any perceived cause for concern arising from other investigations. other factors may also be considered such as the intended patient population, prior assessment of carcinogenic potential, the extent of systemic exposure, the (dis)similarity to endogenous substances, the appropriate study design, or the timing of study performance relative to clinical development. ",
+        "output":"确定药物是否需进行致癌性试验的基本考虑是患者的最长用药时间及其他研究所出现的任何担忧因素，也可能会考虑其他因素，如拟用患者人群、与潜在致癌性有关的前期研究结果、系统暴露程度、与内源性物质的异同、适当的试验设计及与临床开发进程对应的试验时间安排等。 ",
+        "predict":"评估致癌性试验需求的首要考虑因素是患者治疗的最长时间以及由此产生的其他调查中所见的潜在的担忧。其他因素也可能被考虑，例如预期的患者人群、致癌潜力的前评估、全身暴露的范围、与内源物质的相似性、适当的试验设计，或者试验执行的时间与临床开发的相对时间。"
+    },
+    {
+        "instruction":"4. factors to consider for carcinogenicity testing ",
+        "output":"4.致癌性试验应考虑的因素 ",
+        "predict":"考虑致癌性测试的因素"
+    },
+    {
+        "instruction":"4.1 duration and exposure ",
+        "output":"4.1 用药期限和暴露量 ",
+        "predict":"4.1 暴露时间和暴露时间"
+    },
+    {
+        "instruction":"carcinogenicity studies should be performed for any pharmaceutical whose expected clinical use is continuous for at least 6 months (see note 1). ",
+        "output":"预期临床用药至少连续6个月的药物都应进行致癌性试验（见注释1）。 ",
+        "predict":"对任何预期临床用途持续6个月的药品进行致癌性试验（见第1节）。"
+    },
+    {
+        "instruction":"certain classes of compounds may not be used continuously over a minimum of 6 months but may be expected to be used repeatedly in an intermittent manner. it is difficult to determine and to justify scientifically what time represents a clinically relevant treatment periods for frequent use with regard to carcinogenic potential, especially for discontinuous treatment periods. for pharmaceuticals used frequently in an intermittent manner in the treatment of chronic or recurrent conditions, carcinogenicity studies are generally needed. examples of such conditions include allergic rhinitis, depression, and anxiety. carcinogenicity studies may also need to be considered for certain delivery systems which may result in prolonged exposures. pharmaceuticals administered infrequently or for short duration of exposure (e.g., anaesthetics and radiolabelled imaging agents) do not need carcinogenicity studies unless there is cause for concern. ",
+        "output":"某些类型的化合物可能不会连续用药达6个月，但可能会以间歇的方式重复使用。很难科学地判定何种临床给药周期为有潜在致癌性的频繁用药，尤其是间歇性给药。用于治疗慢性和复发性疾病（例如过敏性鼻炎、忧郁症和焦虑症等）而经常间歇使用的药物，一般需进行致癌性试验。对于某些可能导致暴露时间延长的递药系统，也可能需要考虑进行致癌性试验。除非有潜在致癌性担忧，非经常使用或短期暴露的药物（如麻醉药和放射性同位素标记造影剂）不需进行致癌试验。 ",
+        "predict":"某些类化合物可能在6个月内连续使用，但可能以间歇性方式使用。在考虑经常使用药物的致癌性时，很难确定和证明其临床相关性治疗期。对于慢性或复发性疾病的治疗，一般需要进行致癌性试验。例如，过敏性鼻炎、抑郁和焦虑等。致癌性试验也可能需要考虑某些给药系统，可能导致长期暴露。使用频率低或暴露时间短（如麻醉剂和放射性标记的影像诊断剂）的药物不需要致癌性试验，除非有可疑原因。"
+    },
+    {
+        "instruction":"4.2 cause for concern ",
+        "output":"4.2 担忧因素 ",
+        "predict":"值得关注的4.2原因"
+    },
+    {
+        "instruction":"carcinogenicity studies may be recommended for some pharmaceuticals if there is concern about their carcinogenic potential. criteria for defining these cases should be very carefully considered because this is the most important reason to conduct carcinogenicity studies for most categories of pharmaceuticals. several factors which could be considered may include: (1) previous demonstration of carcinogenic potential in the product class that is considered relevant to humans; (2) structure-activity relationship suggesting carcinogenic risk; (3) evidence of preneoplastic lesions in repeated dose toxicity studies; and (4) long-term tissue retention of parent compound or metabolite(s) resulting in local tissue reactions or other pathophysiological responses. ",
+        "output":"如果某些药物有潜在致癌性担忧，可能需要进行致癌性试验。 对这些情况的界定标准应慎重考虑，因为这是大多数药物进行致癌性试验最重要的理由。应考虑的因素可能包括：（1）已有证据显示此类药物具有与人相关的潜在致癌性；（2）其构效关系提示有致癌性风险；（3）在重复给药毒性试验中有癌前病变的证据；（4）原形化合物或其代谢产物在组织内的长期滞留导致局部组织反应或 其它病理生理变化。 ",
+        "predict":"如果对某些药物的致癌性有疑虑，可推荐进行致癌性试验。确定这些病例的准则应非常仔细考虑，因为这是大多数类别药物进行致癌性试验的最重要原因。可能考虑的几个因素包括：(1)产品类别中被认为与人类有关的致癌性潜力的先前证明；(2)结构-活性关系显示致癌风险；(3)重复剂量毒性试验中出现的前驱性肿瘤；(4)导致局部组织反应或其他病理生理反应的长期组织保留的母体化合物或代谢物；(5)导致局部组织反应或其他病理生理反应的长期组织保留的母体化合物或代谢物。"
+    },
+    {
+        "instruction":"4.3 genotoxicity ",
+        "output":"4.3 遗传毒性 ",
+        "predict":"4.3遗传毒性"
+    },
+    {
+        "instruction":"unequivocally genotoxic compounds, in the absence of other data, are presumed to be trans-species carcinogens, implying a hazard to humans. such compounds need not be subjected to long-term carcinogenicity studies. however, if such a drug is intended to be administered chronically to humans a chronic toxicity study (up to one year) may be necessary to detect early tumorigenic effects. ",
+        "output":"明确有遗传毒性的化合物，在缺乏其它资料的情况下，可假定其为种属交叉致癌物，可能对人体有害。这样的化合物不需要进行长期致癌性试验。然而，如果人需要长期使用这种药物，有可能需要进行长期毒性试验（长达一年），以观察其早期致肿瘤性。 ",
+        "predict":"在没有其他数据的情况下，可归因于遗传毒性化合物，暗示对人类的危险。这些化合物不需要长期致癌性研究。然而，如果这种药物打算长期给人类服用，可能需要进行慢性毒性研究（最多一年），以检测早期肿瘤作用。"
+    },
+    {
+        "instruction":"assessment of the genotoxic potential of a compound should take into account the totality of the findings and acknowledge the intrinsic value and limitations of both in vitro and in vivo tests. the test battery approach of in vitro and in vivo tests is designed to reduce the risk of false negative results for compounds with genotoxic potential. a single positive result in any assay for genotoxicity does not necessarily mean that the test compound poses a genotoxic hazard to humans (ich guidance on specific aspects of regulatory genotoxicity tests). ",
+        "output":"对化合物潜在遗传毒性的评价，应将所有的发现考虑在内，并认识到体外和体内试验的内在价值和局限性。体外、体内试验组合方法是为了降低潜在遗传毒性化合物检测结果的假阴性风险。任何遗传毒性试验的单个阳性结果并不一定表示受试物对人体具有遗传毒性危害（见ich关于药物遗传毒性试验特殊性的指导原则）。 ",
+        "predict":"评价化合物的遗传毒性时，应考虑所有发现，并承认体外和体内试验的内在价值和局限性。体外和体内试验的测试方法设计的目的是减少遗传毒性潜在有害性的风险。任何用于遗传毒性评估的任何试验结果中，单个阳性结果并不意味着测试化合物对人类具有遗传毒性（ICH关于特定遗传毒性试验的指导原则）。"
+    },
+    {
+        "instruction":"4.4 indication and patient population ",
+        "output":"4.4 适应症和患者人群 ",
+        "predict":"4.4适应证和患者人群"
+    },
+    {
+        "instruction":"when carcinogenicity studies are required they usually need to be completed before application for marketing approval. however, completed rodent carcinogenicity studies are not needed in advance of the conduct of large scale clinical trials, unless there is special concern for the patient population. ",
+        "output":"当需要进行致癌试验时，通常应在申请上市前完成。除非对患者人群有特殊的担忧，在进行大规模临床试验前不需要完成啮齿类动物的致癌性试验。 ",
+        "predict":"需要进行致癌性试验的，通常在申请上市许可前完成。但除非对患者人群有特殊关注，否则不需要预先完成小规模临床试验中完成的致癌性试验。"
+    },
+    {
+        "instruction":"for pharmaceuticals developed to treat certain serious diseases, carcinogenicity testing need not be conducted before market approval although these studies should be conducted post-approval. this speeds the availability of pharmaceuticals for lifethreatening or severely debilitating diseases, especially where no satisfactory alternative therapy exists. ",
+        "output":"对于开发用于治疗某些严重疾病的药物，在批准上市前可不 必进行致癌性试验，但仍需在获准上市后开展。这样可加快治疗危及生命的或导致严重衰弱的疾病的药物的可及性，尤其在没有其它满意的替代疗法时更是如此。 ",
+        "predict":"对于治疗某些严重疾病的药品，尽管在上市许可前不需要进行致癌性试验，但应在上市许可后进行。这有助于提高危重疾病和严重衰弱疾病的可用性，特别是当没有满意替代治疗方案时。"
+    },
+    {
+        "instruction":"in instances where the life-expectancy in the indicated population is short (i.e., less than 2 - 3 years) no long-term carcinogenicity studies may be required. for example, oncolytic agents intended for treatment of advanced systemic disease do not generally need carcinogenicity studies. in cases where the therapeutic agent for cancer is generally successful and life is significantly prolonged there may be later concerns regarding secondary cancers. when such pharmaceuticals are intended for adjuvant therapy in tumour free patients or for prolonged use in noncancer indications, carcinogenicity studies are usually needed. ",
+        "output":"当患者人群的预期寿命较短时（如2~3年之内），则不必要求进行长期致癌性试验，如用于全身晚期肿瘤的抗肿瘤药物，通常不需要进行致癌性试验；而在抗肿瘤药物较为有效并能明显延长生命的情况下，后期就可能有继发性肿瘤的担忧。当这些药物拟用于非带瘤患者的辅助治疗或在非肿瘤适应症中长期使用时，通常需要进行致癌性试验。 ",
+        "predict":"在预期人群寿命较短（即小于2-3年）的情况下，可能无需进行长期致癌性试验。例如，用于治疗晚期全身性疾病的人工细胞治疗药物一般不需要进行致癌性试验。对于癌症治疗药物，一般情况下预期寿命较长，可能需要后续关注癌症的二次发生。当这类药物用于无肿瘤患者或用于非癌症性应用时，通常需要进行致癌性试验。"
+    },
+    {
+        "instruction":"4.5 route of exposure ",
+        "output":"4.5 给药途径 ",
+        "predict":"4.5暴露途径"
+    },
+    {
+        "instruction":"the route of exposure in animals should be the same as the intended clinical route when feasible (ich dose selection for carcinogenicity studies of pharmaceuticals). if similar metabolism and systemic exposure can be demonstrated by differing routes of administration, then carcinogenicity studies should only be conducted by a single route, recognising that it is important that relevant organs for the clinical route (e.g., lung for inhalational agents) be adequately exposed to the test material. evidence of adequate exposure may be derived from pharmacokinetic data (ich guidance on repeated dose tissue distribution studies). ",
+        "output":"动物的给药途径应尽可能与临床拟用途径一致（见ich药物致癌性试验剂量选择指导原则）。如果能证明不同的给药途径下代谢及系统暴露量相似，可采用其中一种给药途径开展致癌性试验。应注意与临床给药途径相关的器官（如与吸入剂使用相关的肺部）应充分暴露于受试物。受试物充分暴露的证据可来自药代动力学数据（见ich重复给药组织分布试验指导原则）。 ",
+        "predict":"动物的暴露途径应与临床途径相同（如，可采用的剂量选择）（如，吸入剂的途径）。如果通过不同的途径给药可以证明相似的代谢和全身暴露，那么致癌性试验只能采用一种途径，认识到临床途径相关的器官（如，肺，用于吸入剂）应充分暴露于试验材料中是重要的。可获得充分暴露的证据来自药代动力学数据（如，可重复给药组织分布研究的指导原则）。"
+    },
+    {
+        "instruction":"4.6 extent of systemic exposure ",
+        "output":"4.6 系统暴露的程度 ",
+        "predict":"4.6人群暴露程度"
+    },
+    {
+        "instruction":"pharmaceuticals applied topically (e.g., dermal and ocular routes of administration) may need carcinogenicity studies. pharmaceuticals showing poor systemic exposure from topical routes in humans may not need studies by the oral route to assess the carcinogenic potential to internal organs. where there is cause for concern for photocarcinogenic potential carcinogenicity studies by dermal application (generally in mice) may be needed. pharmaceuticals administered by the ocular route may not require carcinogenicity studies unless there is cause for concern or unless there is significant systemic exposure. ",
+        "output":"局部用药（如皮肤和眼科用药）可能需要进行致癌性试验。无明显系统暴露的局部用药可能不需要以经口给药途径来评价其对内脏器官的潜在致癌作用。当需要考虑潜在光致癌性时，可能需要进行皮肤给药致癌性试验（通常用小鼠）。经眼给药的药物可无需进行致癌性试验，除非有相关担忧或明显的系统暴露。 ",
+        "predict":"（如外用途径）应用在皮肤和眼部途径的药物（如外用途径）可能需要致癌性试验。在人类中显示外用途径的药物可能不需要口服途径评估其致癌性潜力。如果外用途径的致癌性潜力评估存在可疑原因，可能需要进行外用途径的致癌性试验。"
+    },
+    {
+        "instruction":"for different salts, acids, or bases of the same therapeutic moiety, where prior carcinogenicity studies are available, evidence should be provided that there are no significant changes in pharmacokinetics, pharmacodynamics, or toxicity. when changes in exposure and consequent toxicity are noted, then additional bridging studies may be used to determine whether additional carcinogenicity studies are needed. for esters and complex derivatives, similar data would be valuable in assessing the need for an additional carcinogenicity study, but this should be considered on a case-by-case basis. ",
+        "output":"同一治疗成分改盐、改酸根或碱基，即使已有原化合物的致癌性试验数据，也应提供药代动力学、药效动力学或毒性等方面无明显改变的证据。当药物暴露量和继发的毒性发生变化时，可能需进行附加的桥接研究以确定是否需要进行附加的致癌性试验。对于酯类或复杂的衍生物，上述类似数据对评价是否需要进行附加致癌试验是有价值的，但应根据具体情况具体分析。 ",
+        "predict":"对于同一药物的同一种类盐、酸或碱，如果已有前致癌性试验，应当提供证据表明，药物的药动学、药效学或毒性没有显著变化。当发现暴露和由此产生的毒性变化时，可以使用补充的桥梁试验来确定是否需要进行额外的致癌性试验。对于酯和复杂衍生物，类似的资料对于评估是否需要额外的致癌性试验是很有价值的，但应当根据具体情况来考虑。"
+    },
+    {
+        "instruction":"4.7 endogenous peptides and protein substances or their analogs ",
+        "output":"4.7 内源性肽类、蛋白类物质及其类似物 ",
+        "predict":"4.7内源性肽和蛋白质物质或其类似物"
+    },
+    {
+        "instruction":"endogenous peptides or proteins and their analogs, produced by chemical synthesis, by extraction\/purification from an animal\/human source or by biotechnological methods such as recombinant dna technology may require special considerations. ",
+        "output":"经化学合成、由动物或人体组织中提取\/纯化或通过生物技术 方法（如重组dna技术）所生产的内源性肽类或蛋白类物质及其类似物，可能需作特殊考虑。 ",
+        "predict":"由化学合成、从动物或人体中提取或纯化、或用基因工程技术等生物技术方法制得的外源肽或蛋白质及其衍生物，需要特殊考虑。"
+    },
+    {
+        "instruction":"carcinogenicity studies are not generally needed for endogenous substances given essentially as replacement therapy (i.e., physiological levels), particularly where there is previous clinical experience with similar products (for example, animal insulins, pituitary-derived growth hormone, and calcitonin). ",
+        "output":"实际用作替代性治疗（即生理水平）的内源性物质，通常不需要进行致癌性试验，尤其类似产品（如动物胰岛素、垂体来源的生长激素和降钙素）已有临床经验的。 ",
+        "predict":"对于基本上作为替代疗法（即生理水平）给药的内源性物质，一般不需要进行致癌性研究，特别是当以前有类似产品的临床经验时（例如，动物胰岛素、垂体生成生长激素和钙化蛋白）。"
+    },
+    {
+        "instruction":"although not usually necessary, long-term carcinogenicity studies in rodent species should be considered for the other biotechnology products noted above, if indicated by the treatment duration, clinical indication, or patient population (providing neutralising antibodies are not elicited to such an extent in repeated dose studies as to invalidate the results). conduct of carcinogenicity studies may be important in the following circumstances: (1) for products where there are significant differences in biological effects to the natural counterpart(s); (2) for products where modifications lead to significant changes in structure compared to the natural counterpart; and (3) for products resulting in humans in a significant increase over the existing local or systemic concentration (i.e., pharmacological levels). ",
+        "output":"对于除上述以外的其它生物制品，尽管通常情况下不必要进 行啮齿类动物的长期致癌性试验，但如果从疗程、临床适应症或患者人群的角度考虑有担忧因素，应考虑进行啮齿类动物的长期致癌性试验（假如中和抗体的产生并未使重复给药毒性试验的结果失去评价意义）。在下列情况下，可能仍需要进行致癌性试验：（1）其生物活性与天然物质明显不同；（2）经过修饰导致产品结构与天然产物相比有明显变化；（3）人体暴露量远远超过局部或全身暴露的正常水平（即药理学水平）。 ",
+        "predict":"虽然通常不必要，但应考虑在其他生物技术产品上进行长期致癌性研究，如果治疗持续时间、临床应用或患者群体（如未在重复剂量研究中产生中和抗体，以否定结果）表明有显著差异的生物效应。进行致癌性研究可能在以下情况下很重要：(1)对于生物效应与自然对照物有显著差异的产品；(2)对于通过修改结构导致与自然对照物相比有显著变化的产品；(3)对于导致人类在现有局部或全身浓度显著增加的产品(即，药理学水平)。"
+    },
+    {
+        "instruction":"5. need for additional testing ",
+        "output":"5.附加试验的必要性 ",
+        "predict":"（五）需要进行额外检验的项目"
+    },
+    {
+        "instruction":"the relevance of the results obtained from animal carcinogenicity studies for assessment of human safety are often cause for debate. further research may be needed, investigating the mode of action, which may result in confirming the presence or the lack of carcinogenic potential for humans. mechanistic studies are useful to evaluate the relevance of tumour findings in animals for human safety. ",
+        "output":"动物致癌试验结果与人体安全性评价的相关性常常引起争议。可能需要进行进一步的研究探讨其作用方式，从而确定是否对人存在潜在致癌性。作用机制研究对评价动物肿瘤发现与人体安全性的相关性是很有价值的。 ",
+        "predict":"动物致癌性研究的结果对评估人体安全性具有重要价值，但其相关性往往引起争议。进一步的研究可能需要，研究其作用机制，可能有助于确认或排除人类的致癌潜能。机制性研究对动物肿瘤发现的可比性进行评估是有用的。"
+    },
+    {
+        "instruction":"supplementary note ",
+        "output":"补充注释 ",
+        "predict":"补充说明"
+    },
+    {
+        "instruction":"note 1: it is expected that most pharmaceuticals indicated for 3 months treatment would also likely be used for 6 months. in an inquiry to a number of pharmaceutical research and regulatory groups no cases were identified in which a pharmaceutical would be used only for 3 months. ",
+        "output":"注释1：大多数疗程为3个月的药物也可能用药达6个月。一项对多家药物研究和监管机构的问卷调查显示，未见任何一个药物仅用到3个月。",
+        "predict":"注：预计大多数用于3个月治疗的药品也可能会用于6个月。在对数个药学研究和监管机构的询问中，没有发现任何药品仅用于3个月的案例。"
+    }
+]

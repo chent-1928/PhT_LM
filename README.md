@@ -31,6 +31,7 @@ PhT-LM = 检索模块 + 大模型模块
 - test_en_2_zh_es.json：英译汉测试集(4个上下文样例，基于es检索策略)，位于data/目录下
 - test_en_2_zh_vec.json：英译汉测试集(4个上下文样例， 基于vec检索策略)，位于data/目录下
 - test_en_2_zh_without_context.json：英译汉测试集(无上下文样例)，位于data/目录下
+- ICH_file_en_2_zh.json: 英译汉测试集(基于ICH文件《S1A指南：药品致癌性测试必要性指导原则》构建)，位于data/目录下
 - test_zh_2_en_1.json：汉译英测试集(1个上下文样例)，位于data/目录下
 - test_zh_2_en_2.json：汉译英测试集(2个上下文样例)，位于data/目录下
 - test_zh_2_en.json：汉译英测试集(4个上下文样例)，位于data/目录下
@@ -39,6 +40,7 @@ PhT-LM = 检索模块 + 大模型模块
 - test_zh_2_en_es.json：汉译英测试集(4个上下文样例，基于es检索策略)，位于data/目录下
 - test_zh_2_en_vec.json：汉译英测试集(4个上下文样例，基于vec检索策略)，位于data/目录下
 - test_zh_2_en_without_context.json：汉译英测试集(无上下文样例)，位于data/目录下
+- ICH_file_zh_2_en.json: 汉译英测试集(基于ICH文件《S1A指南：药品致癌性测试必要性指导原则》构建)，位于data/目录下
 - 训练集暂不提供。
 - 有需要请发邮件至1928539732@qq.com，注明身份、用途。
 
